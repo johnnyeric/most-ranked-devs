@@ -1,0 +1,30 @@
+{
+  "name": "bmw-users-rank",
+  "version": "1.0.0",
+  "description": "Command line application to rank users in specific technology by City (data from github)",
+  "main": "app.js",
+  "scripts": {
+    "start": "node users-rank",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "./node_modules/.bin/eslint ."
+  },
+  "keywords": [
+    "node.js",
+    "github",
+    "javascript",
+    "api"
+  ],
+  "author": "Johnny Eric Amancio",
+  "license": "ISC",
+  "dependencies": {
+    "commander": "^2.9.0",
+    "github": "^9.2.0",
+    "lodash": "^4.17.4"
+  },
+  "devDependencies": {
+    "eslint": "^4.0.0",
+    "eslint-config-airbnb-base": "^11.2.0",
+    "eslint-plugin-import": "^2.3.0",
+    "mocha": "^3.4.2"
+  }
+}
