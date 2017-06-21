@@ -1,12 +1,13 @@
 {
-  "name": "bmw-users-rank",
+  "name": "bmw-most-ranked-devs",
   "version": "1.0.0",
   "description": "Command line application to rank users in specific technology by City (data from github)",
   "main": "app.js",
   "scripts": {
-    "start": "node users-rank",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "lint": "./node_modules/.bin/eslint ."
+    "start": "./most-ranked-devs.js",
+    "test": "./node_modules/.bin/mocha --reporter spec",
+    "lint": "./node_modules/.bin/eslint .",
+    "debug": "cross-env DEBUG=most-ranked-devs ./most-ranked-devs.js"
   },
   "keywords": [
     "node.js",
@@ -14,14 +15,19 @@
     "javascript",
     "api"
   ],
+  "private": "true",
   "author": "Johnny Eric Amancio",
   "license": "ISC",
   "dependencies": {
+    "bluebird": "^3.5.0",
     "commander": "^2.9.0",
+    "debug": "^2.6.8",
     "github": "^9.2.0",
     "lodash": "^4.17.4"
   },
   "devDependencies": {
+    "chai": "^4.0.2",
+    "cross-env": "^5.0.1",
     "eslint": "^4.0.0",
     "eslint-config-airbnb-base": "^11.2.0",
     "eslint-plugin-import": "^2.3.0",
