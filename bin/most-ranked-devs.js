@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 const program = require('commander');
-const topRank = require('./lib/top_rank');
+const Main = require('../lib/');
 
 let city;
 
@@ -17,5 +17,8 @@ if (typeof city === 'undefined') {
   process.exit(1);
 }
 
-console.log('City was informed! %s', city);
-
+console.log('City was informed: %s', city);
+const main = new Main();
+const props = main.extract(Object.assign({}, program, { city }));
+console.log(JSON.stringify(props));
+// main.rank(props);
