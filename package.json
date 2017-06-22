@@ -4,7 +4,7 @@
   "description": "Command line application to rank users in specific technology by City (data from github)",
   "main": "./lib/index.js",
   "engines": {
-    "node": ">8"
+    "node": ">= 8"
   },
   "scripts": {
     "start": "./bin/most-ranked-devs.js",
