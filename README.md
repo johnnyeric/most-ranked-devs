@@ -6,6 +6,11 @@ This is a command line tool which is able to search for the most highly ranked d
 ##Issues faced
 To make the tool more flexible I decided to allow optional parameters to determine number of top developers and which language to search. Then, I discovered that I could not search for c++ with the library node-github which I was using as a client for the Github API. As a simple solution to make better usage of the time I had, I decided to bring the library into this project and make the fix I needed in order to be able to search for languages with the parameter separator "+".
 
+##Requirements
+
+1. Node v8.0.0+
+2. NPM v5
+
 ##Steps:
 
 1. npm install
@@ -31,3 +36,11 @@ To make the tool more flexible I decided to allow optional parameters to determi
 1. language=JavaScript
 2. number=3
 3. location=Ulm
+
+##Examples
+
+1. ./bin/most-ranked-devs.js "São Paulo"
+2. ./bin/most-ranked-devs.js "San Francisco"
+3. ./bin/most-ranked-devs.js Ulm -n 5
+4. ./bin/most-ranked-devs.js -l python
+4. ./bin/most-ranked-devs.js -l go -n 4
