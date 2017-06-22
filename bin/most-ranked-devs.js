@@ -9,7 +9,7 @@ let city;
 
 program
   .version('1.0.0')
-  .description(`Application to find n most highly ranked developers in a city
+  .description(`Application to find n most highly ranked developers by city
     -If no city is informed it will use default <Ulm>
     -If no number is informed it will use default <3>
     -If no language is informed it will use default <JavaScript>
