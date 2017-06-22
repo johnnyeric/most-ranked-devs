@@ -20,7 +20,10 @@ program
 
 const main = new Main();
 const props = main.extract(Object.assign({}, program, { city }));
+
 console.log('City: %s', props.city);
 console.log('Language: %s', props.language);
 console.log('Number: %i', props.number);
-main.rank(props);
+main.rank(props)
+  .then(rankedUsers => main.print(rankedUsers))
+  .catch(error => console.error(error));
