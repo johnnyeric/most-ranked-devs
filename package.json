@@ -27,6 +27,7 @@
   "license": "ISC",
   "dependencies": {
     "bluebird": "^3.5.0",
+    "cli-progress": "^1.4.1",
     "commander": "^2.9.0",
     "debug": "^2.6.8",
     "github": "^9.2.0",
