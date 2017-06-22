@@ -13,6 +13,8 @@ program
     -If no city is informed it will use default <Ulm>
     -If no number is informed it will use default <3>
     -If no language is informed it will use default <JavaScript>
+
+    It's advised to define .env file with GITHUB_OAUTH_TOKEN property to increase API limit
   `)
   .arguments('<city>')
   .action((c) => { city = c; })
