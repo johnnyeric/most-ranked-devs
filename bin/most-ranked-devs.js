@@ -1,7 +1,9 @@
 #!/usr/bin/env node
 
+require('dotenv').config();
 const program = require('commander');
 const Main = require('../lib/');
+const chalk = require('chalk');
 
 let city;
 
@@ -20,6 +22,10 @@ program
 
 const main = new Main();
 const props = main.extract(Object.assign({}, program, { city }));
+
+if (!process.env.GITHUB_OAUTH_TOKEN) {
+  console.warn(chalk.yellow('Please setup GITHUB_OAUTH_TOKEN token in .env file to increase Github API limits'));
+}
 
 console.log('City: %s', props.city);
 console.log('Language: %s', props.language);

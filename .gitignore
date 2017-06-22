@@ -10,3 +10,6 @@ yarn-error.log
 
 # Editor configurations
 .vscode
+
+# Dotenv file
+.env
