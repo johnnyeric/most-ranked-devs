@@ -10,9 +10,9 @@
 1. ./bin/most-ranked-devs.js -h - For Help
 2. ./bin/most-ranked-devs.js <city> [options] - Most common usage
 3. options:
-..1 <city> **Select a city to search for most highly ranked developers by city**
-..2. -n, --number [number] **Select number for top users**
-..3. -l, --language [language] **Select an alternative programming language** 
+  1. <city> **Select a city to search for most highly ranked developers by city**
+  2. -n, --number [number] **Select number for top users**
+  3. -l, --language [language] **Select an alternative programming language** 
 
 ##Running as global module
 1. **It is also possible to install as a global package with `npm install -g .`**
