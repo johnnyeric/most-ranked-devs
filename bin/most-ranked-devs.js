@@ -9,7 +9,8 @@ program
   .version('1.0.0')
   .arguments('<city>')
   .action((c) => { city = c; })
-  .option('-n, --number [number]', 'Select number for top users')
+  .option('-n, --number [n]', 'Select number for top users')
+  .option('-l, --language [lang]', 'Select an alternative programming language')
   .parse(process.argv);
 
 if (typeof city === 'undefined') {
