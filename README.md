@@ -1,5 +1,11 @@
 #Getting started
 
+##Description
+This is a command line tool which is able to search for the most highly ranked developers by city location.
+
+##Issues faced
+To make the tool more flexible I decided to allow optional parameters to determine number of top developers and which language to search. Then, I discovered that I could not search for c++ with the library node-github which I was using as a client for the Github API. As a simple solution to make better usage of the time I had, I decided to bring the library into this project and make the fix I needed in order to be able to search for languages with the parameter separator "+".
+
 ##Steps:
 
 1. npm install
