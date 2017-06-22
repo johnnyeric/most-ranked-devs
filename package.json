@@ -9,7 +9,7 @@
   "scripts": {
     "start": "./bin/most-ranked-devs.js",
     "lint": "./node_modules/.bin/eslint .",
-    "test": "npm run lint && ./node_modules/.bin/mocha --reporter spec",
+    "test": "npm run lint && ./node_modules/.bin/mocha --timeout 15000 --reporter spec",
     "debug": "cross-env DEBUG=most-ranked-devs ./bin/most-ranked-devs.js"
   },
   "bin": {
