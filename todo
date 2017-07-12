@@ -1,0 +1,6 @@
+-get 5 most ranked users in x cities then use then as reference to calculate base for 100 users
+-github search for users with only filter javascript would return lots of users and using only first pages would give incorrect numbers.
+-filters used language:javascript sort:repositories type:user
+-filter working
+language:javascript type:user followers:>=1000
+https://help.github.com/articles/searching-users/
